@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Delights | Fine Dining Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">Savory Delights</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#specials" class="nav-link">Specials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#events" class="nav-link">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#reservation" class="nav-link">Reservations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Experience Culinary Excellence</h1>
+            <p class="hero-subtitle">Where every dish tells a story</p>
+            <div class="hero-buttons">
+                <a href="#reservation" class="cta-button">Reserve a Table</a>
+                <a href="#menu" class="cta-button secondary">View Menu</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section id="specials" class="specials">
+        <div class="container">
+            <h2 class="section-title">Today's Specials</h2>
+            <div class="specials-container">
+                <div class="special-item">
+                    <div class="special-badge">Chef's Recommendation</div>
+                    <img src="https://myfoodbook.com.au/sites/default/files/styles/schema_img/public/recipe_photo/Easy_As_Aussie_Seafood_Platter_vert%20copy.jpg" alt="Special Dish">
+                    <div class="special-content">
+                        <h3>Seafood Platter</h3>
+                        <p>Fresh catch of the day with grilled vegetables and signature sauce</p>
+                        <div class="special-price">
+                            <span class="price">$32.99</span>
+                            <span class="old-price">$38.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="special-item">
+                    <div class="special-badge">Weekend Special</div>
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Special Dish">
+                    <div class="special-content">
+                        <h3>Gourmet Pizza</h3>
+                        <p>Artisanal pizza with truffle, wild mushrooms, and premium cheese</p>
+                        <div class="special-price">
+                            <span class="price">$21.99</span>
+                            <span class="old-price">$26.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="special-item">
+                    <div class="special-badge">Vegetarian</div>
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Special Dish">
+                    <div class="special-content">
+                        <h3>Rainbow Bowl</h3>
+                        <p>Colorful vegetable medley with quinoa and tahini dressing</p>
+                        <div class="special-price">
+                            <span class="price">$16.99</span>
+                            <span class="old-price">$19.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="starters">Starters</button>
+                <button class="category-btn" data-category="mains">Main Courses</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+                <button class="category-btn" data-category="drinks">Drinks</button>
+            </div>
+            <div class="menu-grid">
+                <!-- Starters -->
+                <div class="menu-item" data-category="starters">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Salad Dish">
+                    <h3>Mediterranean Salad</h3>
+                    <p>Fresh vegetables with feta cheese and olive oil dressing</p>
+                    <span class="price">$14.99</span>
+                </div>
+                <div class="menu-item" data-category="starters">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzQ3uRlkA9FcxCYoeCpmF7pNLMK-UBzfQSpQ&s" alt="Bruschetta">
+                    <h3>Tomato Bruschetta</h3>
+                    <p>Toasted bread with fresh tomatoes, basil, and balsamic glaze</p>
+                    <span class="price">$10.99</span>
+                </div>
+                <div class="menu-item" data-category="starters">
+                    <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Soup">
+                    <h3>Creamy Mushroom Soup</h3>
+                    <p>Wild mushroom soup with truffle oil and herb croutons</p>
+                    <span class="price">$9.99</span>
+                </div>
+                
+                <!-- Main Courses -->
+                <div class="menu-item" data-category="mains">
+                    <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Pasta Dish">
+                    <h3>Truffle Pasta</h3>
+                    <p>Handmade pasta with black truffle and parmesan</p>
+                    <span class="price">$18.99</span>
+                </div>
+                <div class="menu-item" data-category="mains">
+                    <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Steak Dish">
+                    <h3>Prime Rib Steak</h3>
+                    <p>Grilled to perfection with herbs and garlic butter</p>
+                    <span class="price">$26.99</span>
+                </div>
+                <div class="menu-item" data-category="mains">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Salmon Dish">
+                    <h3>Herb-Crusted Salmon</h3>
+                    <p>Atlantic salmon with lemon butter sauce and seasonal vegetables</p>
+                    <span class="price">$22.99</span>
+                </div>
+                <div class="menu-item" data-category="mains">
+                    <img src="https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg" alt="Burger">
+                    <h3>Gourmet Burger</h3>
+                    <p>Angus beef with caramelized onions, bacon, and special sauce</p>
+                    <span class="price">$16.99</span>
+                </div>
+                
+                <!-- Desserts -->
+                <div class="menu-item" data-category="desserts">
+                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Dessert">
+                    <h3>Chocolate Soufflé</h3>
+                    <p>Warm chocolate dessert with vanilla ice cream</p>
+                    <span class="price">$9.99</span>
+                </div>
+                <div class="menu-item" data-category="desserts">
+                    <img src="https://www.seriouseats.com/thmb/deFCx8YVoK5b_rXrIco5oc2Qo4I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2019__05__20190520-cheesecake-vicky-wasik-34-16488b3671ae47b5b29eb7124dbaf938.jpg" alt="Cheesecake">
+                    <h3>New York Cheesecake</h3>
+                    <p>Creamy cheesecake with berry compote and mint</p>
+                    <span class="price">$8.99</span>
+                </div>
+                <div class="menu-item" data-category="desserts">
+                    <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Tiramisu">
+                    <h3>Tiramisu</h3>
+                    <p>Classic Italian dessert with coffee-soaked ladyfingers</p>
+                    <span class="price">$8.99</span>
+                </div>
+                
+                <!-- Drinks -->
+                <div class="menu-item" data-category="drinks">
+                    <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Wine">
+                    <h3>House Wine Selection</h3>
+                    <p>Glass of our premium house red or white wine</p>
+                    <span class="price">$7.99</span>
+                </div>
+                <div class="menu-item" data-category="drinks">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Cocktail">
+                    <h3>Signature Cocktails</h3>
+                    <p>Try our mixologist's special creations</p>
+                    <span class="price">$12.99</span>
+                </div>
+                <div class="menu-item" data-category="drinks">
+                    <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Coffee">
+                    <h3>Artisan Coffee</h3>
+                    <p>Specialty coffee with optional liqueur</p>
+                    <span class="price">$5.99</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Our Story</h2>
+                    <p>Founded in 2005, Savory Delights began as a small family restaurant with a passion for creating memorable dining experiences. Our chefs combine traditional techniques with innovative flavors to bring you dishes that delight all senses.</p>
+                    <p>We source our ingredients from local farmers and producers, ensuring the freshest and most sustainable options for our menu.</p>
+                    <div class="achievements">
+                        <div class="achievement">
+                            <span class="achievement-number" data-count="18">0</span>
+                            <span class="achievement-text">Years of Excellence</span>
+                        </div>
+                        <div class="achievement">
+                            <span class="achievement-number" data-count="50">0</span>
+                            <span class="achievement-text">Signature Dishes</span>
+                        </div>
+                        <div class="achievement">
+                            <span class="achievement-number" data-count="1000">0</span>
+                            <span class="achievement-text">Happy Customers</span>
+                        </div>
+                    </div>
+                    <a href="#" class="read-more">Learn More About Us</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Restaurant Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Restaurant">
+                    <div class="gallery-overlay">
+                        <h3>Elegant Ambiance</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Interior">
+                    <div class="gallery-overlay">
+                        <h3>Modern Design</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Kitchen">
+                    <div class="gallery-overlay">
+                        <h3>Professional Kitchen</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Dining">
+                    <div class="gallery-overlay">
+                        <h3>Fine Dining</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Chef">
+                    <div class="gallery-overlay">
+                        <h3>Expert Chefs</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://cdn.prod.website-files.com/633477637a686d796f22d5a0/6347dab01e23fef85fb0d3f8_63457b651fc7f5b5a272591f_See%2Bhow%2Bto%2Bstop%2Bslow%2Bnights%2Bwith%2Bthese%2Brestaurant%2Band%2Bbar%2Bevent%2Bideas.jpg" alt="Event">
+                    <div class="gallery-overlay">
+                        <h3>Private Events</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <h2 class="section-title">Upcoming Events</h2>
+            <div class="events-container">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="date-day">15</span>
+                        <span class="date-month">Sep</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Wine Tasting Evening</h3>
+                        <p class="event-time"><i class="far fa-clock"></i> 6:00 PM - 9:00 PM</p>
+                        <p>Join us for an exclusive wine tasting event featuring selections from local vineyards paired with artisan cheeses.</p>
+                        <a href="#reservation" class="event-cta">Reserve Spot</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="date-day">22</span>
+                        <span class="date-month">Sep</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Live Jazz Night</h3>
+                        <p class="event-time"><i class="far fa-clock"></i> 7:00 PM - 11:00 PM</p>
+                        <p>Enjoy an evening of smooth jazz performances while savoring our special three-course menu.</p>
+                        <a href="#reservation" class="event-cta">Reserve Spot</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="date-day">30</span>
+                        <span class="date-month">Sep</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Chef's Table Experience</h3>
+                        <p class="event-time"><i class="far fa-clock"></i> 7:30 PM - 10:30 PM</p>
+                        <p>A unique culinary journey with our head chef, featuring a 7-course tasting menu with wine pairings.</p>
+                        <a href="#reservation" class="event-cta">Reserve Spot</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <h2 class="section-title">Make a Reservation</h2>
+            <form class="reservation-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date">
+                </div>
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <input type="time" id="time">
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <select id="guests">
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">5+ People</option>
+                    </select>
+                </div>
+                <div class="form-group full-width">
+                    <label for="message">Special Requests</label>
+                    <textarea id="message" placeholder="Any special requests or requirements"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <div class="testimonial-image">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Customer">
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The best dining experience I've had this year. The truffle pasta was absolutely to die for!"</p>
+                    <h4>- Maria Johnson</h4>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Customer">
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Impeccable service and even better food. Will definitely be coming back for special occasions."</p>
+                    <h4>- Robert Smith</h4>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-image">
+                        <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Customer">
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"The atmosphere was perfect for our anniversary dinner. Thank you for the wonderful evening!"</p>
+                    <h4>- Sarah & Michael</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Savory Delights</h3>
+                    <p>Fine dining experience with a focus on seasonal ingredients and innovative cuisine.</p>
+                    <div class="footer-logo">SD</div>
+                </div>
+                <div class="footer-section">
+                    <h3>Hours</h3>
+                    <p>Monday - Thursday: 5pm - 10pm</p>
+                    <p>Friday - Saturday: 5pm - 11pm</p>
+                    <p>Sunday: 4pm - 9pm</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Gourmet Avenue, Foodville</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@savorydelights.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h4>Subscribe to Our Newsletter</h4>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Savory Delights. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
